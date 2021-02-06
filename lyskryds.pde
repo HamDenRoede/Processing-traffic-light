@@ -1,18 +1,3 @@
-/* //key / mousepress exercise
-void draw()
-{
-  if (keyPressed == true)
-    {
-      println("I found the any key!");
-    }
-
-  if (mousePressed == true) 
-    {
-      println("MousePressed");
-    }
-}
-*/
-
 void setup()
 {
   size(80,240);
@@ -22,12 +7,14 @@ void setup()
 
 void draw()
 {
+  //traffic light drawing
   stroke(0);
   strokeWeight(2);
   fill(100,100,100);
   ellipse(40,40,80,80);
   ellipse(40,120,80,80);
   ellipse(40,200,80,80);
+  
   
   //red light
   if (key == CODED)
